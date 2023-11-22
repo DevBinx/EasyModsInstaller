@@ -2,7 +2,7 @@
 
 ; HM NIS Edit Wizard helper defines
 !define PRODUCT_NAME "minecraft mod eastinstaller"
-!define PRODUCT_VERSION "1.0"
+!define PRODUCT_VERSION "1.1"
 !define PRODUCT_PUBLISHER "devbinx"
 
 SetCompressor lzma
@@ -104,7 +104,11 @@ Section "waystone" SEC16
   File "..\Downloads\1.20.1_mods\mods\waystones-fabric-1.20-14.0.2.jar"
 SectionEnd
 
-Section "library" SEC17
+Section "Grave" SEC17
+  File "..\Downloads\1.20.1_mods\mods\youre-in-grave-danger-2.0.0-beta.3.jar"
+SectionEnd
+
+Section "library" SEC18
   File "..\Downloads\1.20.1_mods\mods\architectury-9.1.12-fabric.jar"
   File "..\Downloads\1.20.1_mods\mods\balm-fabric-1.20.1-7.1.4.jar"
   File "..\Downloads\1.20.1_mods\mods\azurelib-fabric-1.20.1-2.0.6.jar"
@@ -116,7 +120,6 @@ Section "library" SEC17
   File "..\Downloads\1.20.1_mods\mods\geckolib-fabric-1.20.1-4.2.4.jar"
   File "..\Downloads\1.20.1_mods\mods\midnightlib-fabric-1.4.1.jar"
   File "..\Downloads\1.20.1_mods\mods\Zoomify-2.11.2.jar"
-  File "..\Downloads\1.20.1_mods\mods\youre-in-grave-danger-2.0.0-beta.3.jar"
   File "..\Downloads\1.20.1_mods\mods\yet-another-config-lib-fabric-3.2.1+1.20.jar"
 SectionEnd
 
@@ -125,21 +128,22 @@ SectionEnd
 
 ; Section descriptions
 !insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC01} "�������� ȯ����"
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC02} "�پ��� ���� �߰�"
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC03} "�κ��丮 & �Ͻ����� â�϶� ��� ����ó��"
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC04} "�һ��� ���� ��ű��� ���� ����"
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC05} "���� ���̿� ����"
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC06} "�پ��� ���� �߰�"
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC07} "���չ� ��ƺ���"
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC08} "�̴ϸ�"
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC09} "������ �ű� �� ���콺 ���� ����"
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC10} "�پ��� �ִϸ��̼� �߰�"
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC11} "�߼Ҹ� ����"
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC12} "�Ѹ��"
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC13} "�� ������ �پ��� Ÿ�� & ���� �߰�"
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC14} "���� �߰�"
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC15} "���� & ���� & �һ��� ���� ��� ��ű� ���� �߰�"
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC16} "Ȱ��ȭ�� ���ۼ����� �����̵� �� �� �ִ� ���ۼ� �߰�"
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC17} "��� ���̺귯�� �� dependencies"
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC01} "현실적인 환경음"
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC02} "다양한 모자 추가"
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC03} "인벤토리 & 일시정지 창일때 배경 블러처리"
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC04} "불사의 토템 장신구에 장착 가능"
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC05} "월드 바이옴 개선"
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC06} "다양한 날개 추가"
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC07} "조합법 모아보기"
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC08} "미니맵"
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC09} "아이템 옮길 때 마우스 성능 개선"
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC10} "다양한 애니메이션 추가"
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC11} "발소리 개선"
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC12} "총모드"
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC13} "맵 전역에 다양한 타워 & 마을 추가"
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC14} "가방 추가"
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC15} "모자 & 날개 & 불사의 토템 등등 장신구 슬롯 추가"
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC16} "활성화한 전송석으로 순간이동 할 수 있는 전송석 추가"
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC17} "사망 시 사망한 자리에 무덤 생성"
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC18} "모드 라이브러리 및 dependencies"
 !insertmacro MUI_FUNCTION_DESCRIPTION_END
